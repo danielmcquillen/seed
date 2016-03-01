@@ -1,6 +1,8 @@
 #!/bin/bash
 # drops the ``seed`` DB, then creates it. Add a super_user
 
+# IMPORTANT: Make sure to set SEED_DB_USERNAME and SEED_DB_PASS env variables before running this.
+
 echo "Dropping db..."
 sudo -H -u postgres bash -c 'dropdb seed-deploy'
 
